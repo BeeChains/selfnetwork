@@ -21,12 +21,12 @@ async function getTopLinks(query) {
   const numResults = 21;
   const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${query}&num=${numResults}&fields=items(link,title)`;
 
-  try {
+try {
    const response = await fetch(url);
    const data = await response.json();
    return data.items;
  } catch (error) {
-    console.error(error);
+   console.error(error);
  }
 }
 
