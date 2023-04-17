@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Daily Self-Improvement Links</title>
+<title>Daily Self-Improvement Links | search.selfnetwork/</title>
 <script>
-		// Define the search queries for each category
+// Define the search queries for each category
  const searchQueries = {
  "self-searching": "self-searching techniques",
  "self-knowing": "self-knowing practices",
@@ -50,23 +50,23 @@
 </script>
 </head>
 <body>
-	<h1>Daily Self-Improvement Links</h1>
-	<p>Here are the top 3 links for each category:</p>
-	<ul id="self-searching-list">
-		<li>Loading...</li>
-	</ul>
-	<ul id="self-knowing-list">
-		<li>Loading...</li>
-	</ul>
-	<ul id="self-enquiry-list">
-		<li>Loading...</li>
-	</ul>
-	<ul id="self-awareness-list">
-		<li>Loading...</li>
-	</ul>
-	<ul id="self-aware-ai-list">
-		<li>Loading...</li>
-	</ul>
+<h1>Daily Self-Improvement Links</h1>
+<p>Here are the top 3 links for each category:</p>
+<ul id="self-searching-list">
+<li>Loading...</li>
+</ul>
+<ul id="self-knowing-list">
+<li>Loading...</li>
+</ul>
+<ul id="self-enquiry-list">
+<li>Loading...</li>
+</ul>
+<ul id="self-awareness-list">
+<li>Loading...</li>
+</ul>
+<ul id="self-aware-ai-list">
+<li>Loading...</li>
+</ul>
 <script async src="https://cse.google.com/cse.js?cx=b667ff28003398517"></script>
 <div class="gcse-search"></div>
 </body>
