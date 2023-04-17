@@ -1,0 +1,2 @@
+# selfnetwork
+home.selfnetwork/
