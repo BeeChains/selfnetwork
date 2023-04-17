@@ -9,7 +9,9 @@ const searchQueries = {
   "self-knowing": "self-knowing practices",
   "self-enquiry": "self-enquiry exercises",
   "self-awareness": "self-awareness strategies",
-  "self-aware-ai": "self-aware AI tools"
+  "self-aware-ai": "self-aware AI tools,"
+  "presence meditation": "presence meditation,"
+  "agni-yoga": "agni-yoga"
 };
 
 // Retrieve the top links for a given search query
@@ -20,12 +22,12 @@ async function getTopLinks(query) {
   const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${query}&num=${numResults}&fields=items(link,title)`;
 
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data.items;
-  } catch (error) {
+   const response = await fetch(url);
+   const data = await response.json();
+   return data.items;
+ } catch (error) {
     console.error(error);
-  }
+ }
 }
 
 // Update the HTML with the top links for each category
