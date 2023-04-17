@@ -31,17 +31,17 @@ async function getTopLinks(query) {
 // Update the HTML with the top links for each category
 async function updateLinks() {
   for (const category in searchQueries) {
-    const categoryLinks = await getTopLinks(searchQueries[category]);
-    const top3Links = categoryLinks.slice(0, 3);
-    const categoryList = document.getElementById(`${category}-list`);
-    categoryList.innerHTML = ""; // Clear previous links
-    for (const link of top3Links) {
-      const linkItem = document.createElement("li");
-      const linkAnchor = document.createElement("a");
-      linkAnchor.href = link.link;
-      linkAnchor.textContent = link.title;
-      linkItem.appendChild(linkAnchor);
-      categoryList.appendChild(linkItem);
+   const categoryLinks = await getTopLinks(searchQueries[category]);
+   const top3Links = categoryLinks.slice(0, 3);
+   const categoryList = document.getElementById(`${category}-list`);
+   categoryList.innerHTML = ""; // Clear previous links
+   for (const link of top3Links) {
+   const linkItem = document.createElement("li");
+   const linkAnchor = document.createElement("a");
+   linkAnchor.href = link.link;
+   linkAnchor.textContent = link.title;
+   linkItem.appendChild(linkAnchor);
+   categoryList.appendChild(linkItem);
     }
   }
 }
@@ -52,23 +52,6 @@ setInterval(updateLinks, 24 * 60 * 60 * 1000);
 </script>
 </head>
 <body>
-<h1>Daily Self-Improvement Links</h1>
-<p>Here are the top 3 links for each category:</p>
-<ul id="self-searching-list">
-<li>Loading...</li>
-</ul>
-<ul id="self-knowing-list">
-<li>Loading...</li>
-</ul>
-<ul id="self-enquiry-list">
-<li>Loading...</li>
-</ul>
-<ul id="self-awareness-list">
-<li>Loading...</li>
-</ul>
-<ul id="self-aware-ai-list">
-<li>Loading...</li>
-</ul>
 <script async src="https://cse.google.com/cse.js?cx=b667ff28003398517"></script>
 <div class="gcse-search"></div>
 </body>
