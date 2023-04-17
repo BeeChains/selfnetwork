@@ -18,7 +18,7 @@ const searchQueries = {
 async function getTopLinks(query) {
   const apiKey = 'AIzaSyAtmn5xLJsokT0i1XvuREPIaAx2JtG8coQ';
   const cx = 'b667ff28003398517';
-  const numResults = 10;
+  const numResults = 21;
   const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${query}&num=${numResults}&fields=items(link,title)`;
 
   try {
@@ -50,8 +50,7 @@ async function updateLinks() {
 
 // Update the links on page load and every 24 hours
 window.onload = updateLinks;
-setInterval(updateLinks, 24 * 60 * 60 * 1000);
-</script>
+setInterval(updateLinks, 24 * 60 * 60 * 1000);</script>
 </head>
 <body>
 <script async src="https://cse.google.com/cse.js?cx=b667ff28003398517"></script>
