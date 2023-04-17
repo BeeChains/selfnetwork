@@ -67,6 +67,8 @@
 	<ul id="self-aware-ai-list">
 		<li>Loading...</li>
 	</ul>
+<script async src="https://cse.google.com/cse.js?cx=b667ff28003398517"></script>
+<div class="gcse-search"></div>
 </body>
 </html>
 In the getTopLinks function, replace the YOUR_API_KEY and YOUR_SEARCH_ENGINE_ID placeholders with your own API key and search engine ID respectively. You can find your search engine ID on the Google Programmable Search control panel.
