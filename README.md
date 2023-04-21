@@ -81,7 +81,7 @@
 
 	<script src="https://cdn.openai.com/sdk/js/latest.js"></script>
 	<script>
-		const openai = new OpenAI(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);
+		const openai = new OpenAI(Your-API-Key);
 
 		document.getElementById("input-form").addEventListener("submit", function(event) {
 			event.preventDefault();
